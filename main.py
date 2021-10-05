@@ -15,7 +15,7 @@ def get_question (term,list_obj):
     for q in ll :
         ql = re.sub('Search\sfor:.*','',q)
 
-        if term_initial in ql and ql not in list_obj :
+        if ql not in list_obj :
             question_final.append(ql)
         else:
             pass
